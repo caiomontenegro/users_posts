@@ -1,20 +1,21 @@
 <template>
 <div>
-  <h1>{{ post.title }}}</h1>
+  <h1>{{ getStatePost.title}}</h1>
   <div>
-    <p>{{ post.content }}</p>
-    <span>{{ post.author }}</span>
+    <p>{{ getStatePost.content }}</p>
+    <span>{{ getStatePost.author }}</span>
   </div>
 </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  props: {
-    post: {
-      type: Object,
-      require: True,
-    }
-  }
+  computed: {
+    ...mapGetters({
+      getStatePost: 'getStatePost'
+    })
+  },
 }
 </script>
