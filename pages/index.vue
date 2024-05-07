@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div>
-      <h1>Welcome to Users Posts</h1>
+      <h1>Bem vindo</h1>
     </div>
     <p>Clique no título do post para lê-lo.</p>
     <user-post v-for="post in posts" :key="post.id" :post="post"></user-post>

@@ -17,7 +17,7 @@ export default {
 <template>
   <header class="header">
     <div class="header__main">
-      <h1><a href="/">User Posts</a></h1>
+      <h2><a href="/">Posts de Usuário</a></h2>
       <MobileBurguerButton @click="activeToggleNavi" />
     </div>
     <nav :class="{'showNavi' :  toggleNavi, 'header__navi' : true}">
